@@ -21,9 +21,9 @@
 		6494C064183D09F4004B8C63 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6494C046183D09F4004B8C63 /* UIKit.framework */; };
 		6494C06C183D09F4004B8C63 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6494C06A183D09F4004B8C63 /* InfoPlist.strings */; };
 		6494C06E183D09F4004B8C63 /* gamenseni2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6494C06D183D09F4004B8C63 /* gamenseni2Tests.m */; };
-		6494C078183D1477004B8C63 /* sikaku.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6494C077183D1477004B8C63 /* sikaku.jpeg */; };
 		6494C07B183D1C9B004B8C63 /* seikaiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6494C07A183D1C9B004B8C63 /* seikaiViewController.m */; };
 		6494C07D183D238B004B8C63 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6494C07C183D238B004B8C63 /* QuartzCore.framework */; };
+		E87F537D1845D69B002019DF /* drawline_view.m in Sources */ = {isa = PBXBuildFile; fileRef = E87F537C1845D69B002019DF /* drawline_view.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,10 +56,11 @@
 		6494C069183D09F4004B8C63 /* gamenseni2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "gamenseni2Tests-Info.plist"; sourceTree = "<group>"; };
 		6494C06B183D09F4004B8C63 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6494C06D183D09F4004B8C63 /* gamenseni2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gamenseni2Tests.m; sourceTree = "<group>"; };
-		6494C077183D1477004B8C63 /* sikaku.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sikaku.jpeg; path = ../../../Downloads/sikaku.jpeg; sourceTree = "<group>"; };
 		6494C079183D1C9B004B8C63 /* seikaiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = seikaiViewController.h; sourceTree = "<group>"; };
 		6494C07A183D1C9B004B8C63 /* seikaiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = seikaiViewController.m; sourceTree = "<group>"; };
 		6494C07C183D238B004B8C63 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E87F537B1845D69B002019DF /* drawline_view.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drawline_view.h; sourceTree = "<group>"; };
+		E87F537C1845D69B002019DF /* drawline_view.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = drawline_view.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +125,8 @@
 				6494C051183D09F4004B8C63 /* AppDelegate.h */,
 				6494C052183D09F4004B8C63 /* AppDelegate.m */,
 				6494C054183D09F4004B8C63 /* Main.storyboard */,
+				E87F537B1845D69B002019DF /* drawline_view.h */,
+				E87F537C1845D69B002019DF /* drawline_view.m */,
 				6494C079183D1C9B004B8C63 /* seikaiViewController.h */,
 				6494C07A183D1C9B004B8C63 /* seikaiViewController.m */,
 				6494C057183D09F4004B8C63 /* ViewController.h */,
@@ -138,7 +141,6 @@
 			isa = PBXGroup;
 			children = (
 				6494C04A183D09F4004B8C63 /* gamenseni2-Info.plist */,
-				6494C077183D1477004B8C63 /* sikaku.jpeg */,
 				6494C04B183D09F4004B8C63 /* InfoPlist.strings */,
 				6494C04E183D09F4004B8C63 /* main.m */,
 				6494C050183D09F4004B8C63 /* gamenseni2-Prefix.pch */,
@@ -243,7 +245,6 @@
 				6494C05B183D09F4004B8C63 /* Images.xcassets in Resources */,
 				6494C04D183D09F4004B8C63 /* InfoPlist.strings in Resources */,
 				6494C056183D09F4004B8C63 /* Main.storyboard in Resources */,
-				6494C078183D1477004B8C63 /* sikaku.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +265,7 @@
 			files = (
 				6494C059183D09F4004B8C63 /* ViewController.m in Sources */,
 				6494C053183D09F4004B8C63 /* AppDelegate.m in Sources */,
+				E87F537D1845D69B002019DF /* drawline_view.m in Sources */,
 				6494C07B183D1C9B004B8C63 /* seikaiViewController.m in Sources */,
 				6494C04F183D09F4004B8C63 /* main.m in Sources */,
 			);
@@ -474,6 +476,7 @@
 				6494C073183D09F4004B8C63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6494C074183D09F4004B8C63 /* Build configuration list for PBXNativeTarget "gamenseni2Tests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +485,7 @@
 				6494C076183D09F4004B8C63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
