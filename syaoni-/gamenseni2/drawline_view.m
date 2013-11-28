@@ -54,44 +54,20 @@ float end_y;
     start_x = p.x;    // X座標
     start_y = p.y;    // Y座標
     
-    //X座標
-    /*[self.sx addObject:[NSNumber numberWithInt:100]];
-    int ix = [[self.sx lastObject] intValue];
-    
-    //X座標
-    [self.sy addObject:[NSNumber numberWithInt:100]];
-    int iy = [[self.sy lastObject] intValue];*/
-    
-    NSNumber *number_x = [NSNumber numberWithFloat:p.x];
-    NSNumber *number_y = [NSNumber numberWithFloat:p.y];
-    int ix = [number_x intValue];
-    int iy = [number_y intValue];
-    
-    
-    NSLog(@"plot_x : %f : %d",start_x,ix);
-    NSLog(@"plot_y : %f : %d",start_y,iy);
-    
     
 }
 
 // 画面に触れている指が一本以上移動したときに実行されるメソッド
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
+    //これには特に意味はない
     NSLog(@"touches count : %d (touchesMoved:withEvent:)", [touches count]);
     
     
+    //座標取得
     CGPoint p = [[touches anyObject] locationInView:self];
     end_x = p.x;    // X座標
     end_y = p.y;    // Y座標
-    
-    //X座標
-    /*[self.ex addObject:[NSNumber numberWithInt:p.x]];
-    end_x = [[self.ex lastObject] floatValue];
-     
-    //Y座標
-    [self.ey addObject:[NSNumber numberWithInt:p.y]];
-    end_y = [[self.ey lastObject] floatValue];*/
-    
     
     
     //再描画
@@ -102,19 +78,14 @@ float end_y;
 // 指を一本以上画面から離したときに実行されるメソッド
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
+    //これには特に意味はない
     NSLog(@"touches count : %d (touchesEnded:withEvent:)", [touches count]);
     
+    
+    //現在タタップしている座標取得
     CGPoint p = [[touches anyObject] locationInView:self];
     end_x = p.x;    // X座標
     end_y = p.y;    // Y座標
-    
-    //X座標
-    /*[self.ex addObject:[NSNumber numberWithInt:p.x]];
-    end_x = [[self.ex lastObject] floatValue];
-    
-    //X座標
-    [self.ey addObject:[NSNumber numberWithInt:p.x]];
-    end_y = [[self.ey lastObject] floatValue];*/
     
     //再描画
     [self setNeedsDisplay];
