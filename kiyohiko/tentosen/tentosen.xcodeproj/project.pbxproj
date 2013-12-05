@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6463A694184F1DAC00109E2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6463A693184F1DAC00109E2C /* Foundation.framework */; };
+		6463A696184F1DAC00109E2C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6463A695184F1DAC00109E2C /* CoreGraphics.framework */; };
+		6463A698184F1DAC00109E2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6463A697184F1DAC00109E2C /* UIKit.framework */; };
+		6463A69E184F1DAC00109E2C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6463A69C184F1DAC00109E2C /* InfoPlist.strings */; };
+		6463A6A0184F1DAC00109E2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6463A69F184F1DAC00109E2C /* main.m */; };
+		6463A6A4184F1DAC00109E2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6463A6A3184F1DAC00109E2C /* AppDelegate.m */; };
+		6463A6A7184F1DAC00109E2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6463A6A5184F1DAC00109E2C /* Main.storyboard */; };
+		6463A6AA184F1DAC00109E2C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6463A6A9184F1DAC00109E2C /* ViewController.m */; };
+		6463A6AC184F1DAC00109E2C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6463A6AB184F1DAC00109E2C /* Images.xcassets */; };
+		6463A6B3184F1DAC00109E2C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6463A6B2184F1DAC00109E2C /* XCTest.framework */; };
+		6463A6B4184F1DAC00109E2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6463A693184F1DAC00109E2C /* Foundation.framework */; };
+		6463A6B5184F1DAC00109E2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6463A697184F1DAC00109E2C /* UIKit.framework */; };
+		6463A6BD184F1DAC00109E2C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6463A6BB184F1DAC00109E2C /* InfoPlist.strings */; };
+		6463A6BF184F1DAC00109E2C /* tentosenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6463A6BE184F1DAC00109E2C /* tentosenTests.m */; };
+		6463A6CA184F234300109E2C /* ByougaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6463A6C9184F234300109E2C /* ByougaView.m */; };
+		6463A6CD184F240600109E2C /* Line1.m in Sources */ = {isa = PBXBuildFile; fileRef = 6463A6CC184F240600109E2C /* Line1.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6463A6B6184F1DAC00109E2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6463A688184F1DAC00109E2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6463A68F184F1DAC00109E2C;
+			remoteInfo = tentosen;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6463A690184F1DAC00109E2C /* tentosen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tentosen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6463A693184F1DAC00109E2C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6463A695184F1DAC00109E2C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6463A697184F1DAC00109E2C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6463A69B184F1DAC00109E2C /* tentosen-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tentosen-Info.plist"; sourceTree = "<group>"; };
+		6463A69D184F1DAC00109E2C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6463A69F184F1DAC00109E2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6463A6A1184F1DAC00109E2C /* tentosen-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tentosen-Prefix.pch"; sourceTree = "<group>"; };
+		6463A6A2184F1DAC00109E2C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6463A6A3184F1DAC00109E2C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6463A6A6184F1DAC00109E2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6463A6A8184F1DAC00109E2C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6463A6A9184F1DAC00109E2C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6463A6AB184F1DAC00109E2C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6463A6B1184F1DAC00109E2C /* tentosenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tentosenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6463A6B2184F1DAC00109E2C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6463A6BA184F1DAC00109E2C /* tentosenTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tentosenTests-Info.plist"; sourceTree = "<group>"; };
+		6463A6BC184F1DAC00109E2C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6463A6BE184F1DAC00109E2C /* tentosenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tentosenTests.m; sourceTree = "<group>"; };
+		6463A6C8184F234300109E2C /* ByougaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ByougaView.h; sourceTree = "<group>"; };
+		6463A6C9184F234300109E2C /* ByougaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ByougaView.m; sourceTree = "<group>"; };
+		6463A6CB184F240600109E2C /* Line1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Line1.h; sourceTree = "<group>"; };
+		6463A6CC184F240600109E2C /* Line1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Line1.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6463A68D184F1DAC00109E2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6463A696184F1DAC00109E2C /* CoreGraphics.framework in Frameworks */,
+				6463A698184F1DAC00109E2C /* UIKit.framework in Frameworks */,
+				6463A694184F1DAC00109E2C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6463A6AE184F1DAC00109E2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6463A6B3184F1DAC00109E2C /* XCTest.framework in Frameworks */,
+				6463A6B5184F1DAC00109E2C /* UIKit.framework in Frameworks */,
+				6463A6B4184F1DAC00109E2C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6463A687184F1DAC00109E2C = {
+			isa = PBXGroup;
+			children = (
+				6463A699184F1DAC00109E2C /* tentosen */,
+				6463A6B8184F1DAC00109E2C /* tentosenTests */,
+				6463A692184F1DAC00109E2C /* Frameworks */,
+				6463A691184F1DAC00109E2C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6463A691184F1DAC00109E2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6463A690184F1DAC00109E2C /* tentosen.app */,
+				6463A6B1184F1DAC00109E2C /* tentosenTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6463A692184F1DAC00109E2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6463A693184F1DAC00109E2C /* Foundation.framework */,
+				6463A695184F1DAC00109E2C /* CoreGraphics.framework */,
+				6463A697184F1DAC00109E2C /* UIKit.framework */,
+				6463A6B2184F1DAC00109E2C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6463A699184F1DAC00109E2C /* tentosen */ = {
+			isa = PBXGroup;
+			children = (
+				6463A6A2184F1DAC00109E2C /* AppDelegate.h */,
+				6463A6A3184F1DAC00109E2C /* AppDelegate.m */,
+				6463A6A5184F1DAC00109E2C /* Main.storyboard */,
+				6463A6C8184F234300109E2C /* ByougaView.h */,
+				6463A6CB184F240600109E2C /* Line1.h */,
+				6463A6CC184F240600109E2C /* Line1.m */,
+				6463A6C9184F234300109E2C /* ByougaView.m */,
+				6463A6A8184F1DAC00109E2C /* ViewController.h */,
+				6463A6A9184F1DAC00109E2C /* ViewController.m */,
+				6463A6AB184F1DAC00109E2C /* Images.xcassets */,
+				6463A69A184F1DAC00109E2C /* Supporting Files */,
+			);
+			path = tentosen;
+			sourceTree = "<group>";
+		};
+		6463A69A184F1DAC00109E2C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6463A69B184F1DAC00109E2C /* tentosen-Info.plist */,
+				6463A69C184F1DAC00109E2C /* InfoPlist.strings */,
+				6463A69F184F1DAC00109E2C /* main.m */,
+				6463A6A1184F1DAC00109E2C /* tentosen-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6463A6B8184F1DAC00109E2C /* tentosenTests */ = {
+			isa = PBXGroup;
+			children = (
+				6463A6BE184F1DAC00109E2C /* tentosenTests.m */,
+				6463A6B9184F1DAC00109E2C /* Supporting Files */,
+			);
+			path = tentosenTests;
+			sourceTree = "<group>";
+		};
+		6463A6B9184F1DAC00109E2C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6463A6BA184F1DAC00109E2C /* tentosenTests-Info.plist */,
+				6463A6BB184F1DAC00109E2C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6463A68F184F1DAC00109E2C /* tentosen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6463A6C2184F1DAC00109E2C /* Build configuration list for PBXNativeTarget "tentosen" */;
+			buildPhases = (
+				6463A68C184F1DAC00109E2C /* Sources */,
+				6463A68D184F1DAC00109E2C /* Frameworks */,
+				6463A68E184F1DAC00109E2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tentosen;
+			productName = tentosen;
+			productReference = 6463A690184F1DAC00109E2C /* tentosen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6463A6B0184F1DAC00109E2C /* tentosenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6463A6C5184F1DAC00109E2C /* Build configuration list for PBXNativeTarget "tentosenTests" */;
+			buildPhases = (
+				6463A6AD184F1DAC00109E2C /* Sources */,
+				6463A6AE184F1DAC00109E2C /* Frameworks */,
+				6463A6AF184F1DAC00109E2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6463A6B7184F1DAC00109E2C /* PBXTargetDependency */,
+			);
+			name = tentosenTests;
+			productName = tentosenTests;
+			productReference = 6463A6B1184F1DAC00109E2C /* tentosenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6463A688184F1DAC00109E2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Kiyohiko.Iwamura;
+				TargetAttributes = {
+					6463A6B0184F1DAC00109E2C = {
+						TestTargetID = 6463A68F184F1DAC00109E2C;
+					};
+				};
+			};
+			buildConfigurationList = 6463A68B184F1DAC00109E2C /* Build configuration list for PBXProject "tentosen" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6463A687184F1DAC00109E2C;
+			productRefGroup = 6463A691184F1DAC00109E2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6463A68F184F1DAC00109E2C /* tentosen */,
+				6463A6B0184F1DAC00109E2C /* tentosenTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6463A68E184F1DAC00109E2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6463A6AC184F1DAC00109E2C /* Images.xcassets in Resources */,
+				6463A69E184F1DAC00109E2C /* InfoPlist.strings in Resources */,
+				6463A6A7184F1DAC00109E2C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6463A6AF184F1DAC00109E2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6463A6BD184F1DAC00109E2C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6463A68C184F1DAC00109E2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6463A6AA184F1DAC00109E2C /* ViewController.m in Sources */,
+				6463A6CD184F240600109E2C /* Line1.m in Sources */,
+				6463A6CA184F234300109E2C /* ByougaView.m in Sources */,
+				6463A6A4184F1DAC00109E2C /* AppDelegate.m in Sources */,
+				6463A6A0184F1DAC00109E2C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6463A6AD184F1DAC00109E2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6463A6BF184F1DAC00109E2C /* tentosenTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6463A6B7184F1DAC00109E2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6463A68F184F1DAC00109E2C /* tentosen */;
+			targetProxy = 6463A6B6184F1DAC00109E2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6463A69C184F1DAC00109E2C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6463A69D184F1DAC00109E2C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6463A6A5184F1DAC00109E2C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6463A6A6184F1DAC00109E2C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6463A6BB184F1DAC00109E2C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6463A6BC184F1DAC00109E2C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6463A6C0184F1DAC00109E2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6463A6C1184F1DAC00109E2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6463A6C3184F1DAC00109E2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tentosen/tentosen-Prefix.pch";
+				INFOPLIST_FILE = "tentosen/tentosen-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6463A6C4184F1DAC00109E2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tentosen/tentosen-Prefix.pch";
+				INFOPLIST_FILE = "tentosen/tentosen-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6463A6C6184F1DAC00109E2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/tentosen.app/tentosen";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tentosen/tentosen-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "tentosenTests/tentosenTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6463A6C7184F1DAC00109E2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/tentosen.app/tentosen";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tentosen/tentosen-Prefix.pch";
+				INFOPLIST_FILE = "tentosenTests/tentosenTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6463A68B184F1DAC00109E2C /* Build configuration list for PBXProject "tentosen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6463A6C0184F1DAC00109E2C /* Debug */,
+				6463A6C1184F1DAC00109E2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6463A6C2184F1DAC00109E2C /* Build configuration list for PBXNativeTarget "tentosen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6463A6C3184F1DAC00109E2C /* Debug */,
+				6463A6C4184F1DAC00109E2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6463A6C5184F1DAC00109E2C /* Build configuration list for PBXNativeTarget "tentosenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6463A6C6184F1DAC00109E2C /* Debug */,
+				6463A6C7184F1DAC00109E2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6463A688184F1DAC00109E2C /* Project object */;
+}
