@@ -23,8 +23,10 @@
 		E87F53B6184E3EF2002019DF /* one_stroke_sketchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E87F53B5184E3EF2002019DF /* one_stroke_sketchTests.m */; };
 		E87F53C7184E5AFE002019DF /* Line.m in Sources */ = {isa = PBXBuildFile; fileRef = E87F53C6184E5AFE002019DF /* Line.m */; };
 		E87F53CA184F1BC4002019DF /* drawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E87F53C9184F1BC4002019DF /* drawViewController.m */; };
-		E87F53D0184F1C95002019DF /* question.m in Sources */ = {isa = PBXBuildFile; fileRef = E87F53CF184F1C95002019DF /* question.m */; };
-		E87F53D3184F6402002019DF /* draw_question.m in Sources */ = {isa = PBXBuildFile; fileRef = E87F53D2184F6402002019DF /* draw_question.m */; };
+		E87F53DC185039D7002019DF /* answer_draw.m in Sources */ = {isa = PBXBuildFile; fileRef = E87F53DB185039D7002019DF /* answer_draw.m */; };
+		E87F53DF18503B81002019DF /* question_draw.m in Sources */ = {isa = PBXBuildFile; fileRef = E87F53DE18503B81002019DF /* question_draw.m */; };
+		E87F53E218588DD9002019DF /* Line_data.m in Sources */ = {isa = PBXBuildFile; fileRef = E87F53E118588DD9002019DF /* Line_data.m */; };
+		E87F53E5185DC9F1002019DF /* select_view.m in Sources */ = {isa = PBXBuildFile; fileRef = E87F53E4185DC9F1002019DF /* select_view.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,10 +63,14 @@
 		E87F53C6184E5AFE002019DF /* Line.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Line.m; sourceTree = "<group>"; };
 		E87F53C8184F1BC4002019DF /* drawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drawViewController.h; sourceTree = "<group>"; };
 		E87F53C9184F1BC4002019DF /* drawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = drawViewController.m; sourceTree = "<group>"; };
-		E87F53CE184F1C95002019DF /* question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = question.h; sourceTree = "<group>"; };
-		E87F53CF184F1C95002019DF /* question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = question.m; sourceTree = "<group>"; };
-		E87F53D1184F6402002019DF /* draw_question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = draw_question.h; sourceTree = "<group>"; };
-		E87F53D2184F6402002019DF /* draw_question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = draw_question.m; sourceTree = "<group>"; };
+		E87F53DA185039D7002019DF /* answer_draw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = answer_draw.h; path = ../answer_draw.h; sourceTree = "<group>"; };
+		E87F53DB185039D7002019DF /* answer_draw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = answer_draw.m; path = ../answer_draw.m; sourceTree = "<group>"; };
+		E87F53DD18503B81002019DF /* question_draw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = question_draw.h; sourceTree = "<group>"; };
+		E87F53DE18503B81002019DF /* question_draw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = question_draw.m; sourceTree = "<group>"; };
+		E87F53E018588DD9002019DF /* Line_data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Line_data.h; sourceTree = "<group>"; };
+		E87F53E118588DD9002019DF /* Line_data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Line_data.m; sourceTree = "<group>"; };
+		E87F53E3185DC9F1002019DF /* select_view.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = select_view.h; sourceTree = "<group>"; };
+		E87F53E4185DC9F1002019DF /* select_view.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = select_view.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,12 +135,16 @@
 				E87F539C184E3EF1002019DF /* Main.storyboard */,
 				E87F53C5184E5AFE002019DF /* Line.h */,
 				E87F53C6184E5AFE002019DF /* Line.m */,
+				E87F53E018588DD9002019DF /* Line_data.h */,
+				E87F53E118588DD9002019DF /* Line_data.m */,
+				E87F53E3185DC9F1002019DF /* select_view.h */,
+				E87F53E4185DC9F1002019DF /* select_view.m */,
 				E87F53C8184F1BC4002019DF /* drawViewController.h */,
 				E87F53C9184F1BC4002019DF /* drawViewController.m */,
-				E87F53CE184F1C95002019DF /* question.h */,
-				E87F53CF184F1C95002019DF /* question.m */,
-				E87F53D1184F6402002019DF /* draw_question.h */,
-				E87F53D2184F6402002019DF /* draw_question.m */,
+				E87F53DA185039D7002019DF /* answer_draw.h */,
+				E87F53DB185039D7002019DF /* answer_draw.m */,
+				E87F53DD18503B81002019DF /* question_draw.h */,
+				E87F53DE18503B81002019DF /* question_draw.m */,
 				E87F539F184E3EF1002019DF /* ViewController.h */,
 				E87F53A0184E3EF1002019DF /* ViewController.m */,
 				E87F53A2184E3EF1002019DF /* Images.xcassets */,
@@ -272,10 +282,12 @@
 				E87F53C7184E5AFE002019DF /* Line.m in Sources */,
 				E87F53CA184F1BC4002019DF /* drawViewController.m in Sources */,
 				E87F53A1184E3EF1002019DF /* ViewController.m in Sources */,
+				E87F53E5185DC9F1002019DF /* select_view.m in Sources */,
 				E87F539B184E3EF1002019DF /* AppDelegate.m in Sources */,
 				E87F5397184E3EF1002019DF /* main.m in Sources */,
-				E87F53D3184F6402002019DF /* draw_question.m in Sources */,
-				E87F53D0184F1C95002019DF /* question.m in Sources */,
+				E87F53DC185039D7002019DF /* answer_draw.m in Sources */,
+				E87F53DF18503B81002019DF /* question_draw.m in Sources */,
+				E87F53E218588DD9002019DF /* Line_data.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +496,7 @@
 				E87F53BB184E3EF2002019DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E87F53BC184E3EF2002019DF /* Build configuration list for PBXNativeTarget "one-stroke_sketchTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +505,7 @@
 				E87F53BE184E3EF2002019DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

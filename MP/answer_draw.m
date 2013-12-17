@@ -1,19 +1,20 @@
 //
-//  question.m
+//  answer_draw.m
 //  one-stroke_sketch
 //
-//  Created by Shin,ichi  Uehara on 2013/12/04.
+//  Created by Shin,ichi  Uehara on 2013/12/05.
 //  Copyright (c) 2013年 Shin,ichi  Uehara. All rights reserved.
 //
 
-
-//タップして線を描画するクラス
-
-
-#import "question.h"
+#import "answer_draw.h"
 #import "Line.h"
+#import "AppDelegate.h"
 
-@implementation question
+@implementation answer_draw{
+    
+    AppDelegate *appdelegate;
+    CGPoint _point;
+}
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -21,6 +22,7 @@
     if (self) {
         // Initialization code
     }
+    
     return self;
 }
 
@@ -55,13 +57,11 @@
         CGContextSetStrokeColorWithColor(context, [line.color CGColor]);
         
         CGContextStrokePath(context);  // 描画！
-
-
+        
+        
         
         
     }
-    
-    
     
     
 }

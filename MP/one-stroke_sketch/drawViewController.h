@@ -12,4 +12,6 @@
 
 @property (strong, nonatomic) IBOutlet UIView *q_continue;
 
+@property NSMutableArray *Datas;
+
 @end
