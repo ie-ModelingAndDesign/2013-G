@@ -33,6 +33,9 @@
     
     int i;  //connectの番号
     
+    NSMutableArray *_data;
+    
+    Boolean first;
     
 }
 
@@ -70,6 +73,8 @@
     //グローバル変数のように使う
     appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     
+    //最初の線かどうかの判定
+    first = YES;
     
 }
 
@@ -81,39 +86,79 @@
     CGPoint p = [[touches anyObject] locationInView:self.view];
     
     
-    for(NSValue *data in appDelegate.Datas){
+    //iをリセット
+    i = 0;
     
+    //点をタッチした際の処理（点以外の場所では処理しない）
+    //受け取った点の座標を全部回す
+    //線がつながっていないところには引けない
+    for(NSValue *data in appDelegate.Datas){
+        
         CGPoint _point = [data CGPointValue];
         
         //座標が点の中であれば描画スタート
-        if(CGRectContainsPoint(CGRectMake(_point.x-10,_point.y-10,25,25),p)){
-    
+        //最初線を引くときのみ
+        if(CGRectContainsPoint(CGRectMake(_point.x-10,_point.y-10,20,20),p) && first){
             
             _line.e_point = _point;
-        
+            
             ((answer_draw *)(self.view)).lines = _lines;
-    
+            
             //１つの線を格納するオブジェクトを生成
             _line = [[Line alloc]init];
             _line.color = _lineColor;
             _line.lineWidth = _linewidth;
             _line.points = [[NSMutableArray alloc]init];
             _line.able_draw = NO;
-    
+            
             //*front_point = _point;
             
             //線を配列「_lines」に格納
             [_lines addObject:_line];
-    
+            
             _line.s_point = _point;
-    
+            
+            first = NO;
+            
         }
+
         
+        //最初以外
+        //dataの点とつながっている点を_connectに
+        for(NSValue *_connect in [appDelegate.Connect_num objectAtIndex:i]){
+            
+            
+            //もしタップしている座標が点の上ならば新しい線を描画
+            if(CGRectContainsPoint(CGRectMake(_point.x-10,_point.y-10,20,20),p) && CGPointEqualToPoint(_line.s_point, [_connect CGPointValue])
+               ){
+                
+                _line.e_point = _point;
+                
+                ((answer_draw *)(self.view)).lines = _lines;
+                
+                //１つの線を格納するオブジェクトを生成
+                _line = [[Line alloc]init];
+                _line.color = _lineColor;
+                _line.lineWidth = _linewidth;
+                _line.points = [[NSMutableArray alloc]init];
+                _line.able_draw = NO;
+                
+                //線を配列「_lines」に格納
+                [_lines addObject:_line];
+                
+                _line.s_point = _point;
+                
+            }
+        }
+        i += 1;
     }
-    
+
     
 }
 
+
+
+//タッチしてスライドしているときの処理
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
     
@@ -140,7 +185,7 @@
         
             
             //もしタップしている座標が点の上ならば新しい線を描画
-            if(CGRectContainsPoint(CGRectMake(_point.x-10,_point.y-10,25,25),p) && CGPointEqualToPoint(_line.s_point, [_connect CGPointValue])
+            if(CGRectContainsPoint(CGRectMake(_point.x-10,_point.y-10,20,20),p) && CGPointEqualToPoint(_line.s_point, [_connect CGPointValue])
 ){
                 
                 _line.e_point = _point;
@@ -173,6 +218,9 @@
     
 }
 
+
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -199,6 +247,7 @@
     
     [_lines removeAllObjects];
     [self.view setNeedsDisplay];
+    first = YES;
 }
 
 
