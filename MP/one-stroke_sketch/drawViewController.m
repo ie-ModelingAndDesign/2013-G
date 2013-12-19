@@ -52,6 +52,8 @@
     return self;
 }
 
+//viewが呼び出された時最初の一回だけ呼び出される
+//ここでは各変数の初期値を決定する
 - (void)viewDidLoad
 {
     
@@ -79,6 +81,8 @@
 }
 
 
+//タッチ始めの処理
+//点をタッチした時そこが線の引き始めとなる
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     
