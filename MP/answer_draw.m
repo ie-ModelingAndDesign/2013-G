@@ -59,11 +59,12 @@
         CGContextStrokePath(context);  // 描画！
         
         
-        
-        
     }
     
     
+    /*if(appdelegate.able_line_count == appdelegate.line_count){
+        NSLog(@"もろたで工藤!!");
+    }*/
 }
 
 

@@ -110,6 +110,8 @@
     appDelegate.Datas = _data;
     appDelegate.Connect_num = _connect_num;
     
+    appDelegate.able_line_count = 6;
+    appDelegate.line_count = 0;
     
 }
 
@@ -187,6 +189,8 @@
     appDelegate.Datas = _data;
     appDelegate.Connect_num = _connect_num;
     
+    appDelegate.able_line_count = 6;
+    appDelegate.line_count = 0;
     
 }
 

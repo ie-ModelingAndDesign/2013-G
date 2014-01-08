@@ -11,10 +11,11 @@
 
 
 #import "drawViewController.h"
-#import "answer_draw.h"
 #import "Line.h"
+#import "answer_draw.h"
 #import "question_draw.h"
 #import "AppDelegate.h" //AppDelegateにある値をグローバル関数に様に使う（あまり良い方法でない）
+
 
 @interface drawViewController (){
     
@@ -31,12 +32,17 @@
     
     AppDelegate *appDelegate;   //線のデータを読み込むためのappDelegate
     
-    int i;  //connectの番号
+    int i,j;  //connectの番号
     
     NSMutableArray *_data;
     
     Boolean first;
     
+    NSMutableArray *not_connect_point;
+    
+    Boolean connect_able;
+    
+    int check_point;
 }
 
 @end
@@ -75,9 +81,16 @@
     //グローバル変数のように使う
     appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     
+    _data = appDelegate.Datas;
+    
     //最初の線かどうかの判定
     first = YES;
     
+    not_connect_point = [[NSMutableArray alloc]init];
+    
+    j = 0;
+
+    check_point = 1000;
 }
 
 
@@ -89,9 +102,14 @@
     //現在の座標を取得
     CGPoint p = [[touches anyObject] locationInView:self.view];
     
+    NSLog(@"%d,%d",appDelegate.able_line_count,appDelegate.line_count);
     
     //iをリセット
     i = 0;
+    
+    check_point = 1000;
+    
+    //connect_able = YES;
     
     //点をタッチした際の処理（点以外の場所では処理しない）
     //受け取った点の座標を全部回す
@@ -99,6 +117,8 @@
     for(NSValue *data in appDelegate.Datas){
         
         CGPoint _point = [data CGPointValue];
+        
+        connect_able = YES;
         
         //座標が点の中であれば描画スタート
         //最初線を引くときのみ
@@ -124,8 +144,21 @@
             
             first = NO;
             
+            [not_connect_point addObject:[NSNumber numberWithInt:i]];
+            
         }
 
+        
+        if(CGRectContainsPoint(CGRectMake(_point.x-10,_point.y-10,20,20),p))
+            check_point = i;
+        
+        for(NSNumber *check in not_connect_point){
+            
+            if(check_point == [check integerValue])
+                connect_able = NO;
+            
+        }
+        
         
         //最初以外
         //dataの点とつながっている点を_connectに
@@ -133,8 +166,8 @@
             
             
             //もしタップしている座標が点の上ならば新しい線を描画
-            if(CGRectContainsPoint(CGRectMake(_point.x-10,_point.y-10,20,20),p) && CGPointEqualToPoint(_line.s_point, [_connect CGPointValue])
-               ){
+            if(CGRectContainsPoint(CGRectMake(_point.x-10,_point.y-10,20,20),p) && CGPointEqualToPoint(_line.s_point, [_connect CGPointValue]) && connect_able){
+                
                 
                 _line.e_point = _point;
                 
@@ -152,6 +185,8 @@
                 
                 _line.s_point = _point;
                 
+                [not_connect_point addObject:[NSNumber numberWithInt:i]];
+                appDelegate.line_count += 1;
             }
         }
         i += 1;
@@ -176,6 +211,10 @@
     //iをリセット
     i = 0;
     
+    check_point = 1000;
+    
+    //connect_able = YES;
+    
     //点をタッチした際の処理（点以外の場所では処理しない）
     //受け取った点の座標を全部回す
     //線がつながっていないところには引けない
@@ -183,14 +222,28 @@
         
         CGPoint _point = [data CGPointValue];
         
+        connect_able = YES;
+        
+        
+        if(CGRectContainsPoint(CGRectMake(_point.x-10,_point.y-10,20,20),p))
+            check_point = i;
+        
+        
+        for(NSNumber *check in not_connect_point){
+            
+            if(check_point == [check integerValue])
+                connect_able = NO;
+            
+        }
+        
+        
         
         //dataの点とつながっている点を_connectに
         for(NSValue *_connect in [appDelegate.Connect_num objectAtIndex:i]){
         
             
             //もしタップしている座標が点の上ならば新しい線を描画
-            if(CGRectContainsPoint(CGRectMake(_point.x-10,_point.y-10,20,20),p) && CGPointEqualToPoint(_line.s_point, [_connect CGPointValue])
-){
+            if(CGRectContainsPoint(CGRectMake(_point.x-10,_point.y-10,20,20),p) && CGPointEqualToPoint(_line.s_point, [_connect CGPointValue]) && connect_able){
                 
                 _line.e_point = _point;
                 
@@ -208,11 +261,20 @@
                 
                 _line.s_point = _point;
                 
+                [not_connect_point addObject:[NSNumber numberWithInt:i]];
+                
+                appDelegate.line_count += 1;
+                
             }
         }
         i += 1;
     }
     
+    
+    /*if(appDelegate.able_line_count == appDelegate.line_count){
+        NSLog(@"もろたで工藤!!");
+    }*/
+
     
 
     //viewを書き換える
@@ -252,6 +314,8 @@
     [_lines removeAllObjects];
     [self.view setNeedsDisplay];
     first = YES;
+    not_connect_point = [[NSMutableArray alloc]init];
+    appDelegate.line_count = 0;
 }
 
 

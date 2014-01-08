@@ -7,7 +7,6 @@
 //
 
 #import "question_draw.h"
-#import "Line_data.h"
 #import "drawViewController.h"
 #import "AppDelegate.h"
 
