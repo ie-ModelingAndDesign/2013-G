@@ -2,3 +2,5 @@
 ======
 
 DOG
+
+one-stroke_sketch
