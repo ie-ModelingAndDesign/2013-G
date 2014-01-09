@@ -11,9 +11,11 @@
 
 
 #import "drawViewController.h"
-#import "question.h"
 #import "Line.h"
-#import "draw_question.h"
+#import "answer_draw.h"
+#import "question_draw.h"
+#import "AppDelegate.h" //AppDelegateにある値をグローバル関数に様に使う（あまり良い方法でない）
+
 
 @interface drawViewController (){
     
@@ -26,6 +28,21 @@
     //線の幅
     float _linewidth;
     
+    //NSMutableArray *_check;
+    
+    AppDelegate *appDelegate;   //線のデータを読み込むためのappDelegate
+    
+    int i,j;  //connectの番号
+    
+    NSMutableArray *_data;
+    
+    Boolean first;
+    
+    NSMutableArray *not_connect_point;
+    
+    Boolean connect_able;
+    
+    int check_point;
 }
 
 @end
@@ -41,6 +58,8 @@
     return self;
 }
 
+//viewが呼び出された時最初の一回だけ呼び出される
+//ここでは各変数の初期値を決定する
 - (void)viewDidLoad
 {
     
@@ -53,83 +72,220 @@
     //背景色を白に設定
     self.view.backgroundColor = [UIColor whiteColor];
     
-    //デフォルトの線の色を黒に
+    //デフォルトの線の色を青に
     _lineColor = [UIColor blueColor];
     
     //線幅を12に設定
     _linewidth = 12.0;
+    
+    //グローバル変数のように使う
+    appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    
+    _data = appDelegate.Datas;
+    
+    //最初の線かどうかの判定
+    first = YES;
+    
+    not_connect_point = [[NSMutableArray alloc]init];
+    
+    j = 0;
 
+    check_point = 1000;
 }
 
 
+//タッチ始めの処理
+//点をタッチした時そこが線の引き始めとなる
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     
     //現在の座標を取得
     CGPoint p = [[touches anyObject] locationInView:self.view];
     
+    NSLog(@"%d,%d",appDelegate.able_line_count,appDelegate.line_count);
     
-    //座標が点の中であれば描画スタート
-    if(CGRectContainsPoint(CGRectMake(100,100,20,20),p)){
+    //iをリセット
+    i = 0;
     
-        ((question *)(self.view)).lines = _lines;
+    check_point = 1000;
     
-        //１つの線を格納するオブジェクトを生成
-        _line = [[Line alloc]init];
-        _line.color = _lineColor;
-        _line.lineWidth = _linewidth;
-        _line.points = [[NSMutableArray alloc]init];
-        _line.able_draw = NO;
+    //connect_able = YES;
     
-        //線を配列「_lines」に格納
-        [_lines addObject:_line];
-    
-        _line.s_point = p;
-    
+    //点をタッチした際の処理（点以外の場所では処理しない）
+    //受け取った点の座標を全部回す
+    //線がつながっていないところには引けない
+    for(NSValue *data in appDelegate.Datas){
+        
+        CGPoint _point = [data CGPointValue];
+        
+        connect_able = YES;
+        
+        //座標が点の中であれば描画スタート
+        //最初線を引くときのみ
+        if(CGRectContainsPoint(CGRectMake(_point.x-10,_point.y-10,20,20),p) && first){
+            
+            _line.e_point = _point;
+            
+            ((answer_draw *)(self.view)).lines = _lines;
+            
+            //１つの線を格納するオブジェクトを生成
+            _line = [[Line alloc]init];
+            _line.color = _lineColor;
+            _line.lineWidth = _linewidth;
+            _line.points = [[NSMutableArray alloc]init];
+            _line.able_draw = NO;
+            
+            //*front_point = _point;
+            
+            //線を配列「_lines」に格納
+            [_lines addObject:_line];
+            
+            _line.s_point = _point;
+            
+            first = NO;
+            
+            [not_connect_point addObject:[NSNumber numberWithInt:i]];
+            
+        }
+
+        
+        if(CGRectContainsPoint(CGRectMake(_point.x-10,_point.y-10,20,20),p))
+            check_point = i;
+        
+        for(NSNumber *check in not_connect_point){
+            
+            if(check_point == [check integerValue])
+                connect_able = NO;
+            
+        }
+        
+        
+        //最初以外
+        //dataの点とつながっている点を_connectに
+        for(NSValue *_connect in [appDelegate.Connect_num objectAtIndex:i]){
+            
+            
+            //もしタップしている座標が点の上ならば新しい線を描画
+            if(CGRectContainsPoint(CGRectMake(_point.x-10,_point.y-10,20,20),p) && CGPointEqualToPoint(_line.s_point, [_connect CGPointValue]) && connect_able){
+                
+                
+                _line.e_point = _point;
+                
+                ((answer_draw *)(self.view)).lines = _lines;
+                
+                //１つの線を格納するオブジェクトを生成
+                _line = [[Line alloc]init];
+                _line.color = _lineColor;
+                _line.lineWidth = _linewidth;
+                _line.points = [[NSMutableArray alloc]init];
+                _line.able_draw = NO;
+                
+                //線を配列「_lines」に格納
+                [_lines addObject:_line];
+                
+                _line.s_point = _point;
+                
+                [not_connect_point addObject:[NSNumber numberWithInt:i]];
+                appDelegate.line_count += 1;
+            }
+        }
+        i += 1;
     }
-    
+
     
 }
 
+
+
+//タッチしてスライドしているときの処理
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
     
     //現在のポイントを線に追加
     CGPoint p = [[touches anyObject] locationInView:self.view];
-    
     _line.e_point = p;
     
     //始点が点の位置以外にならようにする
     _line.able_draw = YES;
     
+    //iをリセット
+    i = 0;
+    
+    check_point = 1000;
+    
+    //connect_able = YES;
+    
     //点をタッチした際の処理（点以外の場所では処理しない）
-    if(CGRectContainsPoint(CGRectMake(200,100,10,10),p) || CGRectContainsPoint(CGRectMake(180,150,10,10),p) || CGRectContainsPoint(CGRectMake(120,150,10,10),p) || CGRectContainsPoint(CGRectMake(150,50,10,10),p) || CGRectContainsPoint(CGRectMake(100,100,10,10),p)){
+    //受け取った点の座標を全部回す
+    //線がつながっていないところには引けない
+    for(NSValue *data in appDelegate.Datas){
+        
+        CGPoint _point = [data CGPointValue];
+        
+        connect_able = YES;
         
         
-        _line.e_point = p;
+        if(CGRectContainsPoint(CGRectMake(_point.x-10,_point.y-10,20,20),p))
+            check_point = i;
         
-        ((question *)(self.view)).lines = _lines;
         
-        //１つの線を格納するオブジェクトを生成
-        _line = [[Line alloc]init];
-        _line.color = _lineColor;
-        _line.lineWidth = _linewidth;
-        _line.points = [[NSMutableArray alloc]init];
-        _line.able_draw = NO;
+        for(NSNumber *check in not_connect_point){
+            
+            if(check_point == [check integerValue])
+                connect_able = NO;
+            
+        }
         
-        //線を配列「_lines」に格納
-        [_lines addObject:_line];
         
-        _line.s_point = p;
-
         
+        //dataの点とつながっている点を_connectに
+        for(NSValue *_connect in [appDelegate.Connect_num objectAtIndex:i]){
+        
+            
+            //もしタップしている座標が点の上ならば新しい線を描画
+            if(CGRectContainsPoint(CGRectMake(_point.x-10,_point.y-10,20,20),p) && CGPointEqualToPoint(_line.s_point, [_connect CGPointValue]) && connect_able){
+                
+                _line.e_point = _point;
+                
+                ((answer_draw *)(self.view)).lines = _lines;
+                
+                //１つの線を格納するオブジェクトを生成
+                _line = [[Line alloc]init];
+                _line.color = _lineColor;
+                _line.lineWidth = _linewidth;
+                _line.points = [[NSMutableArray alloc]init];
+                _line.able_draw = NO;
+                
+                //線を配列「_lines」に格納
+                [_lines addObject:_line];
+                
+                _line.s_point = _point;
+                
+                [not_connect_point addObject:[NSNumber numberWithInt:i]];
+                
+                appDelegate.line_count += 1;
+                
+            }
+        }
+        i += 1;
     }
-        
+    
+    
+    /*if(appDelegate.able_line_count == appDelegate.line_count){
+        NSLog(@"もろたで工藤!!");
+    }*/
+
+    
+
     //viewを書き換える
     if(_line.able_draw)
         [self.view setNeedsDisplay];
     
+    
 }
+
+
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -140,12 +296,13 @@
 
 
 //各ボタンの機能
-
+//今無し
 - (IBAction)seikaibtn:(id)sender {
     [self.view bringSubviewToFront:_q_continue];
 }
 
 
+//今無し
 - (IBAction)nextbtn:(id)sender {
     [self.view sendSubviewToBack:_q_continue];
 }
@@ -156,6 +313,9 @@
     
     [_lines removeAllObjects];
     [self.view setNeedsDisplay];
+    first = YES;
+    not_connect_point = [[NSMutableArray alloc]init];
+    appDelegate.line_count = 0;
 }
 
 

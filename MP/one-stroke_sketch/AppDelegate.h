@@ -11,5 +11,10 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property NSMutableArray *Datas;
+@property NSMutableArray *Connect_num;
+@property NSMutableArray *Connect;
+@property int able_line_count;
+@property int line_count;
 
 @end

@@ -15,5 +15,6 @@
 @property CGPoint s_point;  //描画する線の始点座標
 @property CGPoint e_point;  //描画する線の終点座標
 @property Boolean able_draw;    //書いていいかどうか判断
+@property int line_number;
 @end
 
