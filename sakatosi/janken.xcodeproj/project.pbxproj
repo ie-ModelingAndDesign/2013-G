@@ -26,6 +26,8 @@
 		292588C5187D7CF500E6F0F2 /* again.png in Resources */ = {isa = PBXBuildFile; fileRef = 292588C4187D7CF500E6F0F2 /* again.png */; };
 		292588C7187D7CFD00E6F0F2 /* pa.png in Resources */ = {isa = PBXBuildFile; fileRef = 292588C6187D7CFD00E6F0F2 /* pa.png */; };
 		292588C9187D7D0200E6F0F2 /* tyo.png in Resources */ = {isa = PBXBuildFile; fileRef = 292588C8187D7D0200E6F0F2 /* tyo.png */; };
+		E8AC04D0187E6FA900DEE73C /* pa.png in Resources */ = {isa = PBXBuildFile; fileRef = E8AC04CE187E6FA900DEE73C /* pa.png */; };
+		E8AC04D1187E6FA900DEE73C /* tyo.png in Resources */ = {isa = PBXBuildFile; fileRef = E8AC04CF187E6FA900DEE73C /* tyo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		292588C4187D7CF500E6F0F2 /* again.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = again.png; path = ../../again.png; sourceTree = "<group>"; };
 		292588C6187D7CFD00E6F0F2 /* pa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pa.png; path = ../../pa.png; sourceTree = "<group>"; };
 		292588C8187D7D0200E6F0F2 /* tyo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tyo.png; path = ../../tyo.png; sourceTree = "<group>"; };
+		E8AC04CE187E6FA900DEE73C /* pa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pa.png; sourceTree = "<group>"; };
+		E8AC04CF187E6FA900DEE73C /* tyo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tyo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,8 @@
 				2925889F187D733E00E6F0F2 /* Main_iPad.storyboard */,
 				292588A2187D733E00E6F0F2 /* ViewController.h */,
 				292588A3187D733E00E6F0F2 /* ViewController.m */,
+				E8AC04CE187E6FA900DEE73C /* pa.png */,
+				E8AC04CF187E6FA900DEE73C /* tyo.png */,
 				292588A5187D733E00E6F0F2 /* Images.xcassets */,
 				29258891187D733E00E6F0F2 /* Supporting Files */,
 			);
@@ -244,8 +250,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				292588C3187D7CE600E6F0F2 /* gu.png in Resources */,
+				E8AC04D0187E6FA900DEE73C /* pa.png in Resources */,
 				292588C7187D7CFD00E6F0F2 /* pa.png in Resources */,
 				292588A1187D733E00E6F0F2 /* Main_iPad.storyboard in Resources */,
+				E8AC04D1187E6FA900DEE73C /* tyo.png in Resources */,
 				292588C5187D7CF500E6F0F2 /* again.png in Resources */,
 				292588A6187D733E00E6F0F2 /* Images.xcassets in Resources */,
 				2925889E187D733E00E6F0F2 /* Main_iPhone.storyboard in Resources */,
@@ -490,6 +498,7 @@
 				292588BE187D733E00E6F0F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		292588BF187D733E00E6F0F2 /* Build configuration list for PBXNativeTarget "jankenTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +507,7 @@
 				292588C1187D733E00E6F0F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

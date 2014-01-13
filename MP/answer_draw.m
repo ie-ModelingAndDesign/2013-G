@@ -12,8 +12,10 @@
 
 @implementation answer_draw{
     
-    AppDelegate *appdelegate;
+    AppDelegate *appDelegate;
     CGPoint _point;
+    
+    int count_line;
 }
 
 - (id)initWithFrame:(CGRect)frame
@@ -22,6 +24,8 @@
     if (self) {
         // Initialization code
     }
+    
+    count_line = 0;
     
     return self;
 }
@@ -58,13 +62,8 @@
         
         CGContextStrokePath(context);  // 描画！
         
-        
-    }
+        }
     
-    
-    /*if(appdelegate.able_line_count == appdelegate.line_count){
-        NSLog(@"もろたで工藤!!");
-    }*/
 }
 
 
