@@ -210,85 +210,85 @@
     
     //線の座標データ(x,y)
     //１つ目の点
-    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(90, 240)]];
-    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(230, 240)]];
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(120, 200)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(200, 200)]];
     [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 100)]];
-    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(20, 380)]];
-    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 380)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(60, 300)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 300)]];
     [_connect_num addObject:_connect];
     _connect = [[NSMutableArray alloc]init];
     
     //2つ目
-    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(230, 240)]];
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(200, 200)]];
     [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 100)]];
-    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(90, 240)]];
-    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(300, 380)]];
-    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 380)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(120, 200)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(260, 300)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 300)]];
     [_connect_num addObject:_connect];
     _connect = [[NSMutableArray alloc]init];
     
     //3つ目
     [_data addObject:[NSValue valueWithCGPoint:CGPointMake(160, 100)]];
-    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(90, 240)]];
-    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(230, 240)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(120, 200)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(200, 200)]];
     [_connect_num addObject:_connect];
     _connect = [[NSMutableArray alloc]init];
     
     //4つ目
-    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(90, 240)]];
-    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(230, 240)]];
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(120, 200)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(200, 200)]];
     [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 100)]];
-    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(20, 380)]];
-    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 380)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(60, 300)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 300)]];
     [_connect_num addObject:_connect];
     _connect = [[NSMutableArray alloc]init];
     
     //5つ目
-    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(20, 380)]];
-    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 380)]];
-    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(90, 240)]];
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(60, 300)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 300)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(120, 200)]];
     _connect = [[NSMutableArray alloc]init];
     
     //6つ目
-    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(160, 380)]];
-    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(300, 380)]];
-    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(20, 380)]];
-    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(230, 240)]];
-    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(90, 240)]];
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(160, 300)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(260, 300)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(60, 300)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(200, 200)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(120, 200)]];
     [_connect_num addObject:_connect];
     _connect = [[NSMutableArray alloc]init];
     
     //7つ目
-    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(300, 380)]];
-    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(230, 240)]];
-    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 380)]];
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(260, 300)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(200, 200)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 300)]];
     [_connect_num addObject:_connect];
     _connect = [[NSMutableArray alloc]init];
     
     //8つ目
-    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(230, 240)]];
-    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 380)]];
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(200, 200)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 300)]];
     [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 100)]];
-    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(300, 380)]];
-    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(90, 240)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(260, 300)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(120, 200)]];
     [_connect_num addObject:_connect];
     _connect = [[NSMutableArray alloc]init];
     
     //9つ目
-    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(160, 380)]];
-    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(90, 240)]];
-    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(20, 380)]];
-    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(300, 380)]];
-    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(230, 240)]];
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(160, 300)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(120, 200)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(60, 300)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(260, 300)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(200, 200)]];
     [_connect_num addObject:_connect];
     _connect = [[NSMutableArray alloc]init];
 
     //10つ目
-    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(90, 240)]];
-    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(230, 240)]];
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(120, 200)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(200, 200)]];
     [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 100)]];
-    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(20, 380)]];
-    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 380)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(60, 300)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 300)]];
     [_connect_num addObject:_connect];
     _connect = [[NSMutableArray alloc]init];
 
@@ -298,6 +298,569 @@
     appDelegate.Connect_num = _connect_num;
     
     appDelegate.able_line_count = 9;
+    appDelegate.line_count = 0;
+    
+}
+
+//問題4
+-(IBAction)question4:(id)sender{
+    
+    _data = [[NSMutableArray alloc]init];
+    _connect = [[NSMutableArray alloc]init];
+    _connect_num = [[NSMutableArray alloc]init];
+    
+    appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    
+    appDelegate.Datas = _data;
+    appDelegate.Connect = _connect;
+    appDelegate.Connect_num = _connect_num;
+    
+    
+    //線の座標データ(x,y)
+    //１つ目の点
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(20, 380)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 240)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(20, 100)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(300, 380)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    //2つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(160, 240)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(20, 100)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(20, 380)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(300, 100)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(300, 380)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    //3つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(20, 100)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(20, 380)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 240)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    //4つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(20, 380)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 240)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(20, 100)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(300, 380)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    //5つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(300, 380)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(300,100)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 240)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(20, 380)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    //6つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(300, 100)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 240)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(300, 380)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    //7つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(160, 240)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(20, 100)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(20, 380)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(300, 100)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(300, 380)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    //8つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(300, 380)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(300,100)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 240)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(20, 380)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    
+    appDelegate.Datas = _data;
+    appDelegate.Connect_num = _connect_num;
+    
+    appDelegate.able_line_count = 7;
+    appDelegate.line_count = 0;
+    
+}
+
+//問題5
+-(IBAction)question5:(id)sender{
+    
+    _data = [[NSMutableArray alloc]init];
+    _connect = [[NSMutableArray alloc]init];
+    _connect_num = [[NSMutableArray alloc]init];
+    
+    appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    
+    appDelegate.Datas = _data;
+    appDelegate.Connect = _connect;
+    appDelegate.Connect_num = _connect_num;
+    
+    
+    //線の座標データ(x,y)
+    //１つ目の点
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(160, 380)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(300, 170)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(20, 170)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(20, 310)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(300, 310)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    //2つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(300, 170)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(20, 170)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 380)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(300, 310)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 100)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    //3つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(20, 170)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 380)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(300, 170)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(20, 310)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 100)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    //4つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(160, 380)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(300, 170)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(20, 170)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(20, 310)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(300, 310)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+
+    
+    //5つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(300, 310)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160,100)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(20, 310)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 380)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(300, 170)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    //6つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(160, 100)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(20, 310)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(300, 310)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(20, 170)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(300, 170)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    //7つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(20, 310)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(300, 310)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 100)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 380)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(20, 170)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    //8つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(300, 310)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160,100)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(20, 310)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 380)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(300, 170)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    //9つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(300, 170)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(20, 170)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 380)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(300, 310)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 100)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+
+    //10つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(160, 100)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(20, 310)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(300, 310)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(20, 170)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(300, 170)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+
+    //11つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(20, 170)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 380)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(300, 170)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(20, 310)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 100)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+
+    //12つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(20, 310)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(300, 310)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 100)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 380)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(20, 310)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+
+    //13つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(160, 380)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(300, 170)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(20, 170)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(20, 310)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(300, 310)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+
+    
+    appDelegate.Datas = _data;
+    appDelegate.Connect_num = _connect_num;
+    
+    appDelegate.able_line_count = 13;
+    appDelegate.line_count = 0;
+    
+}
+
+//問題6
+-(IBAction)question6:(id)sender{
+    
+    _data = [[NSMutableArray alloc]init];
+    _connect = [[NSMutableArray alloc]init];
+    _connect_num = [[NSMutableArray alloc]init];
+    
+    appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    
+    appDelegate.Datas = _data;
+    appDelegate.Connect = _connect;
+    appDelegate.Connect_num = _connect_num;
+    
+    
+    //線の座標データ(x,y)
+    //１つ目の点
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(120, 200)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(200, 200)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(120, 120)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(40, 200)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(120, 280)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    //2つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(200, 200)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(200, 120)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(200, 280)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(120, 200)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(280, 200)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    //3つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(200, 120)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(120, 120)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(200, 200)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    //4つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(120, 120)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(120, 200)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(200, 120)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    
+    //5つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(120, 200)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(200, 200)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(120, 120)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(40, 200)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(120, 280)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    //6つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(40, 200)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(40, 280)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(120, 200)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    //7つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(40, 280)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(120, 280)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(40, 200)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    //8つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(120, 280)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(120,200)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(120, 360)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(40, 280)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(200, 280)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    //9つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(200, 280)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(200, 200)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(200, 360)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(120, 280)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(280, 280)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    //10つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(280, 280)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(280, 200)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(200, 280)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    //11つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(280, 200)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(200, 200)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(280, 280)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    
+    //12つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(200, 200)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(200, 120)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(200, 280)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(120, 200)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(280, 200)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+
+    //13つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(200, 280)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(200, 200)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(200, 360)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(120, 280)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(280, 280)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+
+    
+    //14つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(200, 360)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(120, 360)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(200, 280)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    //15つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(120, 360)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(200, 360)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(120, 280)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+
+    //16つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(120, 280)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(120,200)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(120, 360)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(40, 280)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(200, 280)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+
+    //17つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(120, 200)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(200, 200)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(120, 120)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(40, 200)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(120, 280)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+
+    
+    appDelegate.Datas = _data;
+    appDelegate.Connect_num = _connect_num;
+    
+    appDelegate.able_line_count = 16;
+    appDelegate.line_count = 0;
+    
+}
+
+//問題7
+-(IBAction)question7:(id)sender{
+    
+    _data = [[NSMutableArray alloc]init];
+    _connect = [[NSMutableArray alloc]init];
+    _connect_num = [[NSMutableArray alloc]init];
+    
+    appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    
+    appDelegate.Datas = _data;
+    appDelegate.Connect = _connect;
+    appDelegate.Connect_num = _connect_num;
+    
+    
+    //線の座標データ(x,y)
+    //１つ目の点
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(90, 150)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(230, 150)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 80)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(20, 220)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(90, 290)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 220)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    //2つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(230, 150)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(90, 150)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 80)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 220)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(230, 290)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(300, 220)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    //3つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(160, 80)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(90, 150)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(230, 150)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    //4つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(90, 150)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(230, 150)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 80)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(20, 220)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(90, 290)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 220)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    //5つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(90, 290)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(20, 220)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(90, 150)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 220)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 360)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    //6つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(20, 220)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(90, 150)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(90, 290)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    //7つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(90, 150)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(230, 150)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 80)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(20, 220)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(90, 290)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 220)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    //8つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(160, 220)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(90,150)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(230, 150)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(90, 290)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(230, 290)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    //9つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(90, 290)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(20, 220)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(90, 150)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 220)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 360)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    //10つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(160, 360)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(90, 290)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(230, 290)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    //11つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(230, 290)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 220)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 360)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(300, 220)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(230, 150)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    
+    //12つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(300, 220)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(230, 150)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(230, 290)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    //13つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(230, 150)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(90, 150)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 80)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 220)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(230, 290)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(300, 220)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+
+    
+    //14つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(230, 290)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 220)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 360)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(300, 220)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(230, 150)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    //15つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(160, 220)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(90,150)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(230, 150)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(90, 290)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(230, 290)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+    
+    //16つ目
+    [_data addObject:[NSValue valueWithCGPoint:CGPointMake(230, 150)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(90, 150)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 80)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(160, 220)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(230, 290)]];
+    [_connect addObject:[NSValue valueWithCGPoint:CGPointMake(300, 220)]];
+    [_connect_num addObject:_connect];
+    _connect = [[NSMutableArray alloc]init];
+
+    
+    
+    appDelegate.Datas = _data;
+    appDelegate.Connect_num = _connect_num;
+    
+    appDelegate.able_line_count = 15;
     appDelegate.line_count = 0;
     
 }

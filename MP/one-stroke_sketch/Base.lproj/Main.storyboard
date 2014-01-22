@@ -98,6 +98,57 @@
                                             <segue destination="3Nj-VY-cl1" kind="modal" id="gx9-GM-eq4"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgE-Og-ysp">
+                                        <rect key="frame" x="20" y="135" width="85" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="問題4"/>
+                                        <connections>
+                                            <action selector="question1:" destination="EDl-Lv-47t" eventType="touchUpInside" id="bl0-BZ-KWo"/>
+                                            <action selector="question4:" destination="EDl-Lv-47t" eventType="touchUpInside" id="gxX-co-HeM"/>
+                                            <segue destination="3Nj-VY-cl1" kind="modal" id="6kk-0Z-UuY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGd-Qg-GYz">
+                                        <rect key="frame" x="103" y="135" width="85" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="問題5">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="question2:" destination="EDl-Lv-47t" eventType="touchUpInside" id="Jb3-f8-yqp"/>
+                                            <action selector="question5:" destination="EDl-Lv-47t" eventType="touchUpInside" id="hdY-WQ-jBO"/>
+                                            <segue destination="3Nj-VY-cl1" kind="modal" id="tPl-0E-RL1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKE-mk-CL6">
+                                        <rect key="frame" x="181" y="135" width="90" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="問題6">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="question3:" destination="EDl-Lv-47t" eventType="touchUpInside" id="irm-xA-oW8"/>
+                                            <action selector="question6:" destination="EDl-Lv-47t" eventType="touchUpInside" id="fZu-76-Gea"/>
+                                            <segue destination="3Nj-VY-cl1" kind="modal" id="ss3-8q-Vle"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aub-ux-Ya1">
+                                        <rect key="frame" x="20" y="191" width="85" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="問題7">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="question2:" destination="EDl-Lv-47t" eventType="touchUpInside" id="moM-hc-BkV"/>
+                                            <action selector="question5:" destination="EDl-Lv-47t" eventType="touchUpInside" id="I4t-oQ-fbX"/>
+                                            <action selector="question7:" destination="EDl-Lv-47t" eventType="touchUpInside" id="H83-cS-TT9"/>
+                                            <segue destination="3Nj-VY-cl1" kind="modal" id="yIA-Tj-zga"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
@@ -185,6 +236,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="zTD-Fx-IFU"/>
-        <segue reference="vZd-Dv-IzD"/>
+        <segue reference="gx9-GM-eq4"/>
     </inferredMetricsTieBreakers>
 </document>
