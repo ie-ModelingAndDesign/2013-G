@@ -311,7 +311,7 @@
     
     
     
-    /*ここに正解した際の処理をかく*/
+    /*ここに正解した際の処理をかく
     if(appDelegate.able_line_count == appDelegate.line_count){
         
         //テンプレのアラート
@@ -327,7 +327,7 @@
         [alert show];
         
     }
-
+*/
     
 
     //viewを書き換える
@@ -351,8 +351,57 @@
 //各ボタンの機能
 //今無し
 - (IBAction)seikaibtn:(id)sender {
-    [self.view bringSubviewToFront:_q_continue];
+    //[self.view bringSubviewToFront:_q_continue];
+    
+    if(appDelegate.able_line_count == appDelegate.line_count){
+        
+        //テンプレのアラート
+        UIAlertView *alert =
+        [[UIAlertView alloc]
+         initWithTitle:@"判定結果は..."
+         message:@"正解です"
+         delegate:self
+         cancelButtonTitle:nil
+         otherButtonTitles:@"戻る", nil
+         ];
+        
+        [alert show];
+        
+    }
+    if(appDelegate.able_line_count != appDelegate.line_count){
+        
+        //テンプレのアラート
+        UIAlertView *alert1=
+        [[UIAlertView alloc]
+         initWithTitle:@"判定結果は..."
+         message:@"不正解です"
+         delegate:nil
+         cancelButtonTitle:nil
+         otherButtonTitles:@"OK", nil
+         ];
+        
+        [alert1 show];
+        
+    }
+    
+    
+    
+    
+    
 }
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    switch (buttonIndex) {
+            case 0:
+            [self performSegueWithIdentifier:@"back" sender:self];
+            break;
+            default:
+            break;
+        }
+}
+
+
 
 
 //今無し
